@@ -28,7 +28,7 @@ function Shipping(){
 
 
     useEffect(()=>{
-        fetch(url,contentType)
+        fetch(dataUrl,contentType)
         .then(response=>response.json())
         .then((data)=>{
             console.log(data)
@@ -46,14 +46,21 @@ function handleSubmit(e){
 
     return(
         <div>
-            <form onSubmit={(e)=>handleSubmit(e)}>
-                <input type="number" value={weight} placeholder="Weight (Kgs)" onChange={(e)=>setWeight(e.target.value)}/>
-                <input type="number" value={distance} placeholder="Distance (Kms)" onChange={(e)=>setDistance(e.target.value)}/>
-                <input type="text" value={transportMthd} placeholder="Transport Method" onChange={(e)=>setTransportMthd(e.target.value)}/>
-                <a href="#" id="submitBtn">
+            <form>
+                <input type="number" value={weight} placeholder="Weight (Kgs)" onChange={(e)=>{
+                    e.preventDefault()
+                    setWeight(e.target.value)}}/>
+                <input type="number" value={distance} placeholder="Distance (Kms)" onChange={(e)=>{
+                    e.preventDefault()
+                    setDistance(e.target.value)}}/>
+                <input type="text" value={transportMthd} placeholder="Transport Method" onChange={(e)=>{
+                    e.preventDefault()
+                    setTransportMthd(e.target.value)}}/>
+                {/* <a href="#" id="submitBtn" >
                     <span>Submit</span>
                     <div class="liquid"></div>
-                </a>
+                </a> */}
+                <button  onClick={(e)=>handleSubmit(e)}>Submit</button>
 
             </form>
         </div>
