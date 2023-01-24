@@ -34,20 +34,22 @@ function Shipping(){
             console.log(data)
         })
 
-    },[])
+    },[handleSubmit])
 
 
-
+function handleSubmit(e){
+    e.preventDefault()
+}
 
 
 
 
     return(
         <div>
-            <form>
-                <input type="number" value={weight} placeholder="Weight (Kgs)"/>
-                <input type="number" value={distance} placeholder="Distance (Kms)"/>
-                <input type="text" value={transportMthd} placeholder="Transport Method"/>
+            <form onSubmit={(e)=>handleSubmit(e)}>
+                <input type="number" value={weight} placeholder="Weight (Kgs)" onChange={(e)=>setWeight(e.target.value)}/>
+                <input type="number" value={distance} placeholder="Distance (Kms)" onChange={(e)=>setDistance(e.target.value)}/>
+                <input type="text" value={transportMthd} placeholder="Transport Method" onChange={(e)=>setTransportMthd(e.target.value)}/>
                 <a href="#" id="submitBtn">
                     <span>Submit</span>
                     <div class="liquid"></div>
@@ -57,3 +59,5 @@ function Shipping(){
         </div>
     )
 }
+
+export default Shipping;
