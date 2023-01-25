@@ -3,9 +3,9 @@ import React, {useEffect, useState} from "react";
 
 function Flight(){
 
-    const [weight,setWeight] = useState(0)
-    const [distance, setDistance] = useState(0)
-    const [transportMthd,setTransportMthd] = useState("")
+    const [passengers,setPessengers] = useState(0)
+    const [depart_airport, setDepart_Airport] = useState('')
+    const [destination_airport,setDestination_airport] = useState('')
 
     let dataUrl = "https://www.carboninterface.com/api/v1/estimates"
 
@@ -17,10 +17,10 @@ function Flight(){
         },
         body: JSON.stringify({
             "type": "flight",
-            "passengers": 2,
+            "passengers": passengers,
             "legs": [
-              {"departure_airport": "nbo", "destination_airport": "lrh"},
-              {"departure_airport": "lrh", "destination_airport": "nbo"}
+              {"departure_airport": depart_airport, "destination_airport": destination_airport},
+              {"departure_airport": depart_airport, "destination_airport": destination_airport}
             ]
         })
 
@@ -47,15 +47,15 @@ function handleSubmit(e){
     return(
         <div>
             <form>
-                <input type="number" value={weight} placeholder="Weight (Kgs)" onChange={(e)=>{
+                <input type="number" value={passengers} placeholder="number_of_passengers" onChange={(e)=>{
                     e.preventDefault()
-                    setWeight(e.target.value)}}/>
-                <input type="number" value={distance} placeholder="Distance (Kms)" onChange={(e)=>{
+                    setPessengers(e.target.value)}}/>
+                <input type="text" value={depart_airport} placeholder="airport_IATA_code" onChange={(e)=>{
                     e.preventDefault()
-                    setDistance(e.target.value)}}/>
-                <input type="text" value={transportMthd} placeholder="Transport Method" onChange={(e)=>{
+                    setDepart_Airport(e.target.value)}}/>
+                <input type="text" value={destination_airport} placeholder="airport_IATA_code" onChange={(e)=>{
                     e.preventDefault()
-                    setTransportMthd(e.target.value)}}/>
+                    setDestination_airport(e.target.value)}}/>
                 {/* <a href="#" id="submitBtn" >
                     <span>Submit</span>
                     <div class="liquid"></div>
