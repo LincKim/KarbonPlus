@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 
 function Flight(){
 
-    const [passengers,setPessengers] = useState(0)
+    const [passengers,setPessengers] = useState([])
     const [depart_airport, setDepart_Airport] = useState('')
     const [destination_airport,setDestination_airport] = useState('')
 
@@ -41,6 +41,26 @@ function handleSubmit(e){
     e.preventDefault()
 }
 
+//IATA airport codes
+const nairobi = 'nbo'
+const london = 'lrh'
+const capetown = 'cpt'
+const tokyo = 'hnd'
+const sanPaulo = 'san'
+const mexicoCity = 'azp'
+const ottawa = 'ynd'
+const Dar_Es_Salaam = 'dar'
+const Mombasa = 'mba'
+const lagos = 'los'
+const newYork = 'jfk'
+const berlin = 'bml'
+const beijing = 'pkx'
+const hongKong = 'hkg'
+const sydney = 'bwu'
+const texas = 'ggg'
+const seattle = 'sea'
+const addis = 'add'
+const kampala = 'jin'
 
 
 
@@ -50,12 +70,51 @@ function handleSubmit(e){
                 <input type="number" value={passengers} placeholder="number_of_passengers" onChange={(e)=>{
                     e.preventDefault()
                     setPessengers(e.target.value)}}/>
-                <input type="text" value={depart_airport} placeholder="airport_IATA_code" onChange={(e)=>{
+
+                <select type="text" value={depart_airport} placeholder="airport_IATA_code" onChange={(e)=>{
                     e.preventDefault()
-                    setDepart_Airport(e.target.value)}}/>
-                <input type="text" value={destination_airport} placeholder="airport_IATA_code" onChange={(e)=>{
+                    setDepart_Airport(e.target.value)}}>
+                        <option value={nairobi}>Nairobi</option>
+                        <option value={london}>London</option>
+                        <option value={capetown}>Cape Town</option>
+                        <option value={tokyo}>Tokyo</option>
+                        <option value={sanPaulo}>San Paulo</option>
+                        <option value={mexicoCity}>Mexico City</option>
+                        <option value={ottawa}>Ottawa</option>
+                        <option value={Dar_Es_Salaam}>Dar es Salaam</option>
+                        <option value={Mombasa}>Mombasa</option>
+                        <option value={lagos}>Lagos</option>
+                        <option value={newYork}>New York</option>
+                        <option value={berlin}>Berlin</option>
+                        <option value={hongKong}>Hong Kong</option>
+                        <option value={sydney}>Sydney</option>
+                        <option value={texas}>Texas</option>
+                        <option value={seattle}>Seattle</option>
+                        <option value={addis}>Addis Ababa</option>
+                        <option value={kampala}>Kampala</option>
+                    </select>
+                <select type="text" value={destination_airport} placeholder="airport_IATA_code" onChange={(e)=>{
                     e.preventDefault()
-                    setDestination_airport(e.target.value)}}/>
+                    setDestination_airport(e.target.value)}}>
+                         <option value={nairobi}>Nairobi</option>
+                        <option value={london}>London</option>
+                        <option value={capetown}>Cape Town</option>
+                        <option value={tokyo}>Tokyo</option>
+                        <option value={sanPaulo}>San Paulo</option>
+                        <option value={mexicoCity}>Mexico City</option>
+                        <option value={ottawa}>Ottawa</option>
+                        <option value={Dar_Es_Salaam}>Dar es Salaam</option>
+                        <option value={Mombasa}>Mombasa</option>
+                        <option value={lagos}>Lagos</option>
+                        <option value={newYork}>New York</option>
+                        <option value={berlin}>Berlin</option>
+                        <option value={hongKong}>Hong Kong</option>
+                        <option value={sydney}>Sydney</option>
+                        <option value={texas}>Texas</option>
+                        <option value={seattle}>Seattle</option>
+                        <option value={addis}>Addis Ababa</option>
+                        <option value={kampala}>Kampala</option>
+                    </select>
                 {/* <a href="#" id="submitBtn" >
                     <span>Submit</span>
                     <div class="liquid"></div>
