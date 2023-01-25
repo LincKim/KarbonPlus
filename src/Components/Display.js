@@ -1,5 +1,6 @@
 import React from "react";
-import {GiGooeyMolecule} from 'react-icons/fa';
+import {GiGooeyMolecule} from 'react-icons/gi';
+import {MdReadMore} from 'react-icons/md'
 
 function Display({carbonGrams, carbonKg}){
 
@@ -12,7 +13,7 @@ function Display({carbonGrams, carbonKg}){
         <h3>Your Carbon usage is:</h3>
         <p>{carbonGrams} Gramms</p>
         <p>{carbonKg} Kgs</p>
-        <a href="#">Read </a>
+        <a href="#"><MdReadMore/></a>
       </div>
     </div>
   </div>
