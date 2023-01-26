@@ -35,7 +35,7 @@ function handleSubmit(e){
 }
 
     return(
-        <div>
+        <div className="center">
             <h2>Electricity Carbon Estimates</h2>
                 <form>
                     <input type="number" value={elec_Value} placeholder="Unit(mwh)" onChange={(e)=>{

@@ -35,6 +35,8 @@
   to {
     transform: rotate(360deg);
   }
+  
+  /* The below code belongs to FORM and its inputs */
 }
 .center {
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -67,4 +69,4 @@ select {
   border-radius: 10px;
   margin: 1rem .25em;
 }
-
+/* The above code belongs to FORM element */
