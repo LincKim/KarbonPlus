@@ -1,16 +1,34 @@
 import React, {useState} from "react";
-import Display from "../display/Display";
+// import Display from "../display/Display";
+// import TableData from "../analytics/tabledata";
+import {GiGooeyMolecule} from 'react-icons/gi';
+import {MdReadMore} from 'react-icons/md'
 
 
 function Shipping(){
+
+    //takes in the user inputs to give back the estimate
 
     const [weight,setWeight] = useState("")
     const [distance, setDistance] = useState("")
     const [transportMthd,setTransportMthd] = useState("")
 
 
+    // sets the carbon estimate data to a state variable
+
     const [carbonKg, setCarbonKg] = useState(0)
     const [ carbonGrams, setCarbonGrams] = useState(0)
+
+
+    // takes in the result data to be used in creating a analysis table
+
+    let shippingC02kgs = {shipping: `${carbonKg}`}
+    let shippingC02g = {shipping: `${carbonGrams}`}
+
+    console.log(shippingC02g)
+    console.log(shippingC02kgs)
+
+    // the fetch url
 
     let dataUrl = "https://www.carboninterface.com/api/v1/estimates"
 
@@ -77,7 +95,7 @@ function Shipping(){
 
             <div className="form-box">
 	            <form>
-		            <span className="text-center">Shipping Estimate</span>
+		            <p className="text-center">Shipping Estimate</p>
 	                <div className="input-container">
                         <input type="text" value={weight} placeholder="Cargo(Kgs)" onChange={(e)=>setWeight(e.target.value)}/>
 		                {/* <label>Cargo Weight</label>		 */}
@@ -101,7 +119,24 @@ function Shipping(){
                 </form>	
             </div>
 
-            <Display carbonKg={carbonKg} carbonGrams={carbonGrams}/>
+            {/* <Display carbonKg={carbonKg} carbonGrams={carbonGrams}/> */}
+
+            <div className="container">
+                <div className="card">
+                    <div className="box">
+                        <div className="content">
+                            <h2> <GiGooeyMolecule/></h2>
+                            <h3>Your CO<sub>2</sub> footprint:</h3>
+                            <p>{carbonGrams} Gramms</p>
+                            <p>{carbonKg} Kgs</p>
+                            <a href="#"><MdReadMore/></a>
+                            <h2> <GiGooeyMolecule/></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <TableData carbonGrams={shippingC02g} carbonKg={shippingC02kgs}/> */}
 
 
         </div>

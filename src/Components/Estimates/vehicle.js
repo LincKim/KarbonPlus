@@ -1,5 +1,7 @@
 import React, {useState} from "react";
-import Display from "../display/Display";
+// import Display from "../display/Display";
+import {GiGooeyMolecule} from 'react-icons/gi';
+import {MdReadMore} from 'react-icons/md'
 
 
 function Vehicle(){
@@ -77,7 +79,7 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
 
 
     return(
-        <div>
+        <div className="shipping">
             
             {/* <form>
                 <select value={vehicleType} onChange={handleSelectedOption}>
@@ -131,11 +133,29 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
 		                    <input  placeholder="Distance - Kms" type="text" required="" value={distance} onChange={(e)=>{setDistance(e.target.value)}} />
 		                    {/* <label>Distance Covered</label> */}
 	                    </div>
-		            <button type="button" className="btn" onClick={handleSubmit}>submit</button>
+		            <button type="button" className="shipping-btn" onClick={handleSubmit}>submit</button>
                 </form>	
             </div>
 
-            <Display carbonKg={carbonKg} carbonGrams={carbonGrams}/>
+            {/* <Display carbonKg={carbonKg} carbonGrams={carbonGrams}/> */}
+
+
+            <div className="container">
+                <div className="card">
+                    <div className="box">
+                        <div className="content">
+                            <h2> <GiGooeyMolecule/></h2>
+                            <h3>Your Carbon usage is:</h3>
+                            <p>{carbonGrams} Gramms</p>
+                            <p>{carbonKg} Kgs</p>
+                            <a href="#"><MdReadMore/></a>
+                            <h2> <GiGooeyMolecule/></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     )
 }

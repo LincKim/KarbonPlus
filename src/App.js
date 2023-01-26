@@ -1,6 +1,7 @@
 import './App.css';
 import Shipping from './Components/Estimates/shipping';
 import Vehicle from './Components/Estimates/vehicle';
+import Table from './Components/analytics/table';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
 
       <Shipping/>
       {/* <Vehicle/> */}
+      {/* <Table /> */}
 
       
     </div>
