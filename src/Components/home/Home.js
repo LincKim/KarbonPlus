@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import {SiMoleculer} from "react-icons/si";
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -30,7 +31,20 @@ function Home(){
 
 export default Home;
 
-function About(){
+export const Page = () => {
+    const navigate = useNavigate();
+    return (
+        <>
+        <button>Place</button>
+        <button onClick={() => navigate('summary', { replace: true})}>
+            Place
+            </button>
+        </>
+        
+    )
+}
+
+/* function About(){
     return (
         <div>
             <input type="checkbox" id="active"/>
@@ -105,9 +119,4 @@ function Services(){
             </div>
         )
     }
-export {Home, About, Services, Gallery, Feedback};
-    
-
-
-
-
+export {Home, About, Services, Gallery, Feedback}; */
