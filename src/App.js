@@ -1,13 +1,10 @@
 import "./App.css"
 import Home from './Components/home/Home';
-import Shipping from './Components/Estimates/shipping';
-import Vehicle from './Components/Estimates/vehicle';
-import Table from './Components/analytics/table';
-
 
 
 function App() {
   return (
+<<<<<<< HEAD
 
     <div className="App">
 
@@ -16,9 +13,14 @@ function App() {
  );
 }
      
+=======
+        <div className="App">
+       
+        </div>
+>>>>>>> 2bbc07c51529001b6b6f7f21f8bbf94f74af7140
 
-      
-    
- 
+  )
+  }
+
 
 export default App;

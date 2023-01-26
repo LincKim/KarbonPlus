@@ -336,6 +336,8 @@ body .container .card .box .content a:hover {
    /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
     transition: all 0.6s ease-in-out;
   }
+
+
   #active:checked ~ .wrapper{
     /*left: 0;*/
     right:0;
