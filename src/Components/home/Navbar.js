@@ -1,4 +1,5 @@
 import React from 'react';
+import {GiFootprint} from 'react-icons/gi';
 
 function Navbar(){
 
@@ -37,19 +38,17 @@ function Navbar(){
 
             <h2>
                 
-               <p> count your foot print</p>
-               <p>carbon ones</p>
+               <p> Count your foot print.</p>
+               <p style={{color:"white"}}><GiFootprint/></p>
+               <p>Carbon ones!</p>
+               
 
             </h2>
 
     
         </div>
     )
-});
-}
+};
+
 
 export default Navbar;
-
-
-
- 
