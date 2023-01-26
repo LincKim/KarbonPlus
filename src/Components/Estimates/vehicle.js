@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import Display from "../Display";
+import Display from "../display/Display";
 
 
 function Vehicle(){
 
     const [vehicleType,setVehicleType] = useState("")
-    const [distance, setDistance] = useState(0)
+    const [distance, setDistance] = useState()
 
     // the  carbon data
 
@@ -79,7 +79,7 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
     return(
         <div>
             
-            <form>
+            {/* <form>
                 <select value={vehicleType} onChange={handleSelectedOption}>
                     <option value="" disabled selected>Vehicle make</option>
                     <option value={volvo}>Volvo</option>
@@ -101,9 +101,40 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
                     <span>Submit</span>
                     <div class="liquid"></div>
                 </a> */}
-                <button  onClick={handleSubmit}>Submit</button>
+                {/* </form> */} 
 
-            </form>
+
+                <div className="form-box">
+	                <form>
+		                <span className="text-center">Vehicle Estimate</span>
+	                    <div className="input-container">
+                            <select value={vehicleType} onChange={handleSelectedOption}>
+                                <option value="" disabled selected>Vehicle Model</option>
+                                <option value={volvo}>Volvo</option>
+                                <option value={toyota}>Toyota</option>
+                                <option value={mercedes}>Mercedes</option>
+                                <option value={honda}>Honda</option>
+                                <option value={nissan}>Nissan</option>
+                                <option value={hyundai}>Hyundai</option>
+                                <option value={landRover}>Land Rover</option>
+                                <option value={suzuki}>Suzuki</option>
+                                <option value={subaru}>Subaru</option>
+                                <option value={volkswagen}>Volkswagen</option>
+                                <option value={audi}>Audi</option>
+                                <option value={bmw}>BMW</option>
+                                <option value={mazda}>Mazda</option>
+                            </select>
+		                    {/* <input type="text" required=""/> */}
+		                    {/* <label>Vehicle Model</label>		 */}
+	                    </div>
+	                    <div className="input-container">		
+		                    <input  placeholder="Distance - Kms" type="text" required="" value={distance} onChange={(e)=>{setDistance(e.target.value)}} />
+		                    {/* <label>Distance Covered</label> */}
+	                    </div>
+		            <button type="button" className="btn" onClick={handleSubmit}>submit</button>
+                </form>	
+            </div>
+
             <Display carbonKg={carbonKg} carbonGrams={carbonGrams}/>
         </div>
     )

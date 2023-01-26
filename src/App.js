@@ -7,7 +7,7 @@ function App() {
     <div className="App">
 
       <Shipping/>
-      <Vehicle/>
+      {/* <Vehicle/> */}
 
       
     </div>

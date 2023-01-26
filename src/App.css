@@ -40,7 +40,7 @@
 
 /* Submit button css */
 
-a #submitBtn {
+/* a #submitBtn {
   position: relative;
   padding: 20px 50px;
   display: block;
@@ -110,23 +110,23 @@ a:hover .liquid{
   }
 }
 
+ */
 
 
-
-/* CArd forr data Display */
+/* Card for data Display css*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
+} */
 
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   min-height: 100vh;
   background: #232427;
@@ -134,8 +134,9 @@ body {
 
 body .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex;
+  flex-direction: row;
+  align-items:stretch;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 40px 0;
@@ -174,15 +175,15 @@ body .container .card .box {
   background: #2a2b2f;
   border-radius: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex;
   align-items: center;
   overflow: hidden;
   transition: 0.5s;
 }
 
 body .container .card .box:hover {
-  transform: translateY(-50px);
-}
+  transform: translateY(-20px);
+} 
 
 body .container .card .box:before {
   content: "";
@@ -201,7 +202,7 @@ body .container .card .box .content {
 
 body .container .card .box .content h2 {
   position: absolute;
-  top: -10px;
+  top: 40px;
   right: 30px;
   font-size: 8rem;
   color: rgba(255, 255, 255, 0.1);
@@ -227,7 +228,7 @@ body .container .card .box .content a {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
-  background: black;
+  background: rgb(0, 0, 0);
   border-radius: 5px;
   text-decoration: none;
   color: white;
@@ -240,3 +241,127 @@ body .container .card .box .content a:hover {
   background: #fff;
   color: #000;
 }
+
+
+
+/* CSS for the form */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+
+.text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.form-box{
+	position:absolute;
+	left:80%;
+	top:33%;
+  display: flex;
+	transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+/* .input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    pointer-events: none;
+	transition: all 0.5s ease-in-out;
+} */
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding: 8px 0 8px 0;
+  font-size:16px;
+  color:#fff;
+}
+
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.btn{
+	color:#fff;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top: 50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+
+.shipping-btn{
+  color:#fff;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+
+}
+
+
+/* .btn:after{
+	content:"";
+	position:absolute;
+	background:rgba(0,0,0,0.50);
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+} */
+/* .input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+} */
+
+
+/* css for the select option*/
+
+.input-container select{
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+
+}
+
+.input-container select:focus{ 
+  border:none;	
+  outline:none;
+  border-bottom:1px solid #e74c3c;	
+ }
+
+
+ .shipping{
+  display: flex;
+  flex-direction: column;
+ }
