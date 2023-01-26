@@ -1,9 +1,5 @@
 import "./App.css"
 import Home from './Components/home/Home';
-import Shipping from './Components/Estimates/shipping';
-import Vehicle from './Components/Estimates/vehicle';
-import Table from './Components/analytics/table';
-
 
 
 function App() {
@@ -11,10 +7,9 @@ function App() {
 
     <div className="App">
 
-    
-        </div>
- );
-}
+    </div>
+  )
+  }
      
 
       
