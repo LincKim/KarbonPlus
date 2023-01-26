@@ -4,9 +4,10 @@ import React from "react";
 function Fuel() {
   const [responseData, setResponseData] = useState(0);
   const [fuelType, setFuelType]= useState("")
- 
-  function submit(e){
+ const [carbon_g, setCarbon_g] = useState(0)
+ const [carbon_kg, setCarbon_kg] = useState(0)
 
+  function submit(e){
     e.preventDefault()
     const data = {
           type: "fuel_combustion",
@@ -23,9 +24,10 @@ function Fuel() {
       body: JSON.stringify(data)
     })
       .then(res => res.json())
-      .then(response => {
-        console.log(response)
-        console.log(response.data.attributes.carbon_g+" grams",response.data.attributes.carbon_kg+" Killograms")
+      .then(responseData => {
+            setResponseData(responseData)
+            setCarbon_g(responseData.data.attributes.carbon_g)
+            setCarbon_kg(responseData.data.attributes.carbon_kg)
       })
       .catch(error => console.error("Error:", error));
   } 
@@ -43,14 +45,11 @@ function Fuel() {
             const Subbituminous_Coal = "sub"
             const Tire_Fuel = "tdf"
             const Waste_0il = "wo"
-
-
-        console.log(fuelType)
-        console.log(responseData)
-
+ 
         function handleOptionChange(e){
         e.preventDefault()
             setFuelType(e.target.value)
+
         }
 
     return (
@@ -72,9 +71,15 @@ function Fuel() {
                 <option value={Tire_Fuel}>Tire_Fuel</option>
                 <option value={Waste_0il}>Waste_0il</option>
             </select>
-         
+                
         <input type="number" value={responseData} onChange={(e=>setResponseData(e.target.value))}/>
-        
+                  <div>
+                    <p>{carbon_kg} killograms</p>
+                    <p>{carbon_g} grams </p>
+                   
+  
+                   </div>
+           
         
     </form>
     <button onClick={submit}>Submit</button>
