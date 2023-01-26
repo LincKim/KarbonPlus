@@ -12,15 +12,15 @@ function App() {
           <Home />
           <Shipping/>
         </div>
- );
-}
-      
 
+      
       
     
- 
+  );
+}
 
 export default App;
+
 
 
  
