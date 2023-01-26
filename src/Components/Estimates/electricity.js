@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState } from "react";
 
 
 function Electricity(){
@@ -25,30 +25,26 @@ function Electricity(){
 
     }
 
-    useEffect(()=>{
-        fetch(dataUrl,contentType)
-        .then(response=>response.json())
-        .then((data)=>{
-            console.log(data)
-        })
-
-    },[handleSubmit])
-
-
 function handleSubmit(e){
     e.preventDefault()
+    fetch(dataUrl,contentType)
+    .then(response=>response.json())
+    .then((data)=>{
+            console.log(data)
+    })
 }
 
     return(
         <div>
-            <form>
-                <input type="number" value={elec_Value} placeholder="Unit(mwh)" onChange={(e)=>{
-                    e.preventDefault()
-                    setElec_Value(e.target.value)}}/>
-                
-                <button onClick={handleSubmit}>Submit</button>
+            <h2>Electricity Carbon Estimates</h2>
+                <form>
+                    <input type="number" value={elec_Value} placeholder="Unit(mwh)" onChange={(e)=>{
+                        e.preventDefault()
+                        setElec_Value(e.target.value)}}/>
+                    
+                    <button onClick={handleSubmit}>Submit</button>
 
-            </form>
+                </form>
         </div>
     )
 }
