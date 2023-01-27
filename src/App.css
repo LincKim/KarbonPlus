@@ -542,7 +542,7 @@ div .estimate-cards #estimate-containers{
 
 
 #estimate-containers{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   
 }
