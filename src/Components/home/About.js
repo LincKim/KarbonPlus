@@ -11,9 +11,9 @@ function About(){
 
             <nav className="social">
                 <ul>
-                    <li><a className="linkName" href="https://twitter.com/highflyer910">Twitter <i class="fa fa-twitter"></i></a></li>
-                    <li><a className="linkName" href="https://github.com/highflyer910">Github <i class="fa fa-github"></i></a></li>
-                    <li><a className="linkName" href="https://www.linkedin.com/in/teonamushambadze">Linkedin <i class="fa fa-linkedin"></i></a></li>
+                    <li><a className="linkName" href="https://twitter.com/">Twitter <i class="fa fa-twitter"></i></a></li>
+                    <li><a className="linkName" href="https://github.com/">Github <i class="fa fa-github"></i></a></li>
+                    <li><a className="linkName" href="https://www.linkedin.com/">Linkedin <i class="fa fa-linkedin"></i></a></li>
               </ul>
             </nav>
             <div className="me">  
