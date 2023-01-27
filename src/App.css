@@ -1,80 +1,3 @@
-
-
-/* Submit button css */
-
-/* a #submitBtn {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 40px;
-}
-
-a span {
-  position: relative;
-  color: #fff;
-  font-size: 20px;
-  font-family: Arial;
-  letter-spacing: 8px;
-  z-index: 1;
-}
-
-a .liquid {
-  position: absolute;
-  top: -80px;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #4973ff;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-  transition: .5s;
-}
-
-a .liquid::after,
-a .liquid::before {
-  content: '';
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-  background: #000;
-}
-
-a .liquid::before {
-  
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: animate 5s linear infinite;
-}
-
-a .liquid::after {
-  
-  border-radius: 40%;
-  background: rgba(20, 20, 20, .5);
-  animation: animate 10s linear infinite;
-}
-
-a:hover .liquid{
-  top: -120px;
-}
-
-@keyframes animate {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
- */
-
-
 /* Card for data Display css*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
@@ -86,26 +9,26 @@ a:hover .liquid{
 } */
 
 body {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: center;
+  flex-direction: row; */
+  /* flex-wrap: wrap; */
   min-height: 100vh;
-  background: #232427;
+  background: #ffffff;
 }
 
-body .container {
-  display: flex;
-  justify-content: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 0;
-  position:absolute;
-	top: 55%;
-  margin-left: 0%;
+body .cont {
+  /* display: flex; */
+  /* justify-content: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  margin: 30px 0px;
+  /* position:absolute; */
+	/* top: 55%; */
+  /* margin-left: 10%; */
 }
 
-body .container .card {
+body  .cont  .car {
   position: relative;
   min-width: 320px;
   height: 440px;
@@ -118,19 +41,19 @@ body .container .card {
   /* top: 90%; */
 }
 
-body .container .card:nth-child(1) .box .content a {
+body  .cont .car:nth-child(1) .bx .con a {
   background: #2196f3;
 }
 
-body .container .card:nth-child(2) .box .content a {
+body .cont .car:nth-child(2) .bx .con a {
   background: #e91e63;
 }
 
-body .container .card:nth-child(3) .box .content a {
+body .cont .car:nth-child(3) .bx .con a {
   background: #23c186;
 }
 
-body .container .card .box {
+body .cont .car .bx {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -145,11 +68,11 @@ body .container .card .box {
   transition: 0.5s;
 }
 
-body .container .card .box:hover {
+body .cont .car .bx:hover {
   transform: translateY(-20px);
 } 
 
-body .container .card .box:before {
+body .cont .car .bx:before {
   content: "";
   position: absolute;
   top: 0;
@@ -159,12 +82,12 @@ body .container .card .box:before {
   background: rgba(255, 255, 255, 0.03);
 }
 
-body .container .card .box .content {
+body .cont .car .bx .con {
   padding: 20px;
   text-align: center;
 }
 
-body .container .card .box .content h2 {
+body .cont .car .bx .con h2 {
   position: absolute;
   top: -90px;
   right: 30px;
@@ -172,7 +95,7 @@ body .container .card .box .content h2 {
   color: rgba(255, 255, 255, 0.1);
 }
 
-body .container .card .box .content h3 {
+body .cont .car .bx .con h3 {
   font-size: 1.8rem;
   color: #fff;
   z-index: 1;
@@ -180,7 +103,7 @@ body .container .card .box .content h3 {
   margin-bottom: 15px;
 }
 
-body .container .card .box .content p {
+body .cont .car .bx .con p {
   font-size: 1rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
@@ -188,7 +111,7 @@ body .container .card .box .content p {
   transition: 0.5s;
 }
 
-body .container .card .box .content a {
+body .cont .car .bx .con a {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -200,18 +123,15 @@ body .container .card .box .content a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
-body .container .card .box .content a:hover {
+body .cont .car .bx .con a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
   color: #000;
 }
 
-
-
 /* CSS for the form */
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
-
 
 .text-center{
 	color:#fff;	
@@ -222,13 +142,13 @@ body .container .card .box .content a:hover {
     text-align: center;
 }
 .form-box{
-	position:absolute;
+	position: relative;
 	left: 50%;
 	top: 35%;
-  display: flex;
+  /* display: flex; */
   /* justify-content: column;
   flex-direction: column; */
-  align-items: center;
+  /* align-items: center; */
 	transform: translate(-50%,-50%);
     background-color: rgba(0, 0, 0, 0.89);
 	border-radius:3px;
@@ -270,24 +190,6 @@ body .container .card .box .content a:hover {
 	position:relative;
 }
 
-/* 
-.btn:after{
-	content:"";
-	position:absolute;
-	background:rgba(0,0,0,0.50);
-	top:0;
-	right:0;
-	width:100%;
-	height:100%;
-} */
-/* .input-container input:focus ~ label,
-.input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
-	
-} */
-
-
 /* css for the select option*/
 
 .input-container select{
@@ -297,6 +199,7 @@ body .container .card .box .content a:hover {
   width:100%;
   padding:8px 0 5px 0;
   font-size:16px;
+  background-color: black;
   color:#fff;
 
 }
@@ -308,10 +211,13 @@ body .container .card .box .content a:hover {
  }
 
  body .shipping{
-  display: flex;
-  flex-direction: column;
+  display: flex; 
+  flex-direction: row ;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  /* align-items: center;
+  justify-content: center; */
  }
  
 /*the following css is for the home age*/
@@ -336,7 +242,6 @@ body .container .card .box .content a:hover {
    /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
     transition: all 0.6s ease-in-out;
   }
-
 
   #active:checked ~ .wrapper{
     /*left: 0;*/
@@ -458,11 +363,10 @@ body .container .card .box .content a:hover {
     text-align: center;
     width: 100%;
     color: #202020;
-  }
-  .content .title{
     font-size: 40px;
     font-weight: 700;
   }
+   
   .content p{
     font-size: 35px;
     font-weight: 600;
@@ -516,75 +420,10 @@ body .container .card .box .content a:hover {
     letter-spacing: 1px;
   }
 
-
   /* background effect */
 
-  
   /* text effect */
 
-  /* {
-    box-sizing: border-box
-  }
-  :root {
-    --color-1: #186cb8;
-    --color-2: #2a9a9f;
-    --color-3: #f1b211;
-    --color-4: #e83611;
-    --color-5: #f9002f;
-  } 
-  .wrapp {
-    background: #000;
-    line-height: 1;
-    min-height: 100%;
-    display: grid;
-    place-items: center;
-    min-height: calc(100vh - 16px);
-  }
-  #carbon {
-    font-family: "Exo", sans-serif;
-    font-size: 15vw;
-    font-weight: 900;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    margin: auto;
-    text-transform: uppercase;
-    background: linear-gradient(219deg, 
-      var(--color-1) 19%, 
-      transparent 19%,transparent 20%, 
-      var(--color-2) 20%, var(--color-2)  39%,
-      transparent 39%,transparent 40%, 
-      var(--color-3) 40%,var(--color-3) 59% ,
-      transparent 59%,transparent 60%, 
-      var(--color-4) 60%, var(--color-4) 79%,
-      transparent 79%, transparent 80%, 
-      var(--color-5) 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  .contain {
-    padding: 1.5rem;   
-    text-align: center;
-    background: radial-gradient(circle at 1.4% 1.4% ,var(--color-1) .8%,transparent  .8% ), 
-      radial-gradient(circle at 5.5% 3%,var(--color-2) .45% ,transparent .45% ), 
-      radial-gradient(circle at 2.5% 3.5%,var(--color-3) .5% ,transparent .5% ), 
-      radial-gradient(circle at 4.5% 1.2%,var(--color-4) .25%,transparent .25% ),
-  
-      radial-gradient(circle at 98% 98% ,var(--color-1) .8%,transparent  .8% ), 
-      radial-gradient(circle at 95% 95%,var(--color-2) .45% ,transparent .45% ), 
-      radial-gradient(circle at 94.5% 97.5%,var(--color-3) .5% ,transparent .5% ), 
-      radial-gradient(circle at 98.5% 95.5%,var(--color-4) .25%,transparent .25% );
-  
-  
-  }
-  
-  @media screen and (min-width: 768px) {
-    #carbon {
-      font-size: 4rem;
-    }
-  }*/
 
   h2 {
     --s: 0.1em;   /* the thickness of the line */
@@ -613,3 +452,97 @@ body .container .card .box .content a:hover {
     cursor: pointer;
   }
 
+  /* CSS for estimate head */
+
+  #header-estimate{
+    margin-bottom: 200px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3.4em;
+
+
+  
+  }
+
+div .estimate-cards #estimate-containers{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* CSS for about footer */
+
+
+.linkName {
+  color: rgb(125, 0, 0);
+  text-decoration: none;
+}
+.me {
+  width: 400px;
+  margin: 90px auto;
+}
+.me p,
+.me h1 {
+  letter-spacing: 3px;
+  text-align: center;
+}
+.me p {
+  font-weight: 200;
+}
+.me span {
+  font-weight: bold;
+}
+.social {
+  position: fixed;
+  top: 20px;
+}
+.social ul {
+  padding: 0px;
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(122, 0, 0, 0.36);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+.social ul li:hover {
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  transform: rotate(0deg);
+}
+
+
+/* CSS for displaying the card items */
+
+
+
+#estimate-containers{
+  display: flex;
+  flex-direction: column;
+  
+}

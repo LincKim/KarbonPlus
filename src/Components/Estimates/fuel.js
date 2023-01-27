@@ -1,5 +1,7 @@
 import { useState } from "react";
 import React from "react";
+import {GiGooeyMolecule} from 'react-icons/gi';
+import {MdReadMore} from 'react-icons/md'
 
 function Fuel() {
   const [responseData, setResponseData] = useState(0);
@@ -53,8 +55,14 @@ function Fuel() {
         }
 
     return (
-        <div>
+        <div className="shipping">
+          <div className="form-box">
         <form >
+          <p className="text-center"> Fuel Estimates</p>
+           <div className="input-container">
+            <input type="number" value={responseData} onChange={(e=>setResponseData(e.target.value))}/>
+           </div>
+           <div className="input-container">
             <select value={fuelType} onChange={handleOptionChange}>
                 <option>fuel type</option>
                 <option value={Bituminous_Coal}>Bituminous_Coal</option>
@@ -71,18 +79,32 @@ function Fuel() {
                 <option value={Tire_Fuel}>Tire_Fuel</option>
                 <option value={Waste_0il}>Waste_0il</option>
             </select>
-                
-        <input type="number" value={responseData} onChange={(e=>setResponseData(e.target.value))}/>
-                  <div>
-                    <p>{carbon_kg} killograms</p>
-                    <p>{carbon_g} grams </p>
-                   
-  
-                   </div>
-           
-        
+            </div>
+
+            <button className="shipping-btn" onClick={submit}>Submit</button>
+             
     </form>
-    <button onClick={submit}>Submit</button>
+    </div>
+   
+
+    <div className="cont">
+                <div className="car">
+                    <div className="bx">
+                        <div className="con">
+                            <h2> <GiGooeyMolecule/></h2>
+                            <h3>Your Fuel CO<sub>2</sub> footprint:</h3>
+                            <p>{carbon_g} Gramms</p>
+                            <p>{carbon_kg} Kgs</p>
+                            <a href="https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions"><MdReadMore/></a>
+                            <h2> <GiGooeyMolecule/></h2>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
     </div>
      
   );

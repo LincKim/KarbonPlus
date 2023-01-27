@@ -121,15 +121,15 @@ function Shipping(){
 
             {/* <Display carbonKg={carbonKg} carbonGrams={carbonGrams}/> */}
 
-            <div className="container">
-                <div className="card">
-                    <div className="box">
-                        <div className="content">
+            <div className="cont">
+                <div className="car">
+                    <div className="bx">
+                        <div className="con">
                             <h2> <GiGooeyMolecule/></h2>
-                            <h3>Your CO<sub>2</sub> footprint:</h3>
+                            <h3>Your Shipping CO<sub>2</sub> footprint:</h3>
                             <p>{carbonGrams} Gramms</p>
                             <p>{carbonKg} Kgs</p>
-                            <a href="#"><MdReadMore/></a>
+                            <a href="https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions"><MdReadMore/></a>
                             <h2> <GiGooeyMolecule/></h2>
                         </div>
                     </div>

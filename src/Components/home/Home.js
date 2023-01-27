@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
-import {SiMoleculer} from "react-icons/si";
+import { SiMoleculer } from "react-icons/si";
 import { useNavigate } from 'react-router-dom';
-
+import About from "./About";
+import Display from "../display/Display";
+import {Routes, Route} from "react-router-dom";
 
 
 function Home(){
@@ -11,17 +13,21 @@ function Home(){
             
             <input type="checkbox" id="active"/>
             <label for="active" className="menu-btn">
-                <span></span></label>
+                </label>
             <label for="active" className="close"></label>
 
             <Navbar/>
 
-            <div className="content">
-            <div className="title container" >
-            <h1 contenteditable>Karbon<SiMoleculer/></h1>
+            <div>
+                    <h1 id="content">Karbon<SiMoleculer/></h1>
             </div>
 
-            </div>
+            <Routes>
+                <Route path="/estimates" element={ <Display/>}></Route>
+                <Route path="/about" element={ <About/>}></Route>
+                {/* <Route path="/" element={<Home/>}></Route> */}
+            </Routes> 
+
 
         </div>
 
@@ -43,80 +49,3 @@ export const Page = () => {
         
     )
 }
-
-/* function About(){
-    return (
-        <div>
-            <input type="checkbox" id="active"/>
-            <label for="active" className="menu-btn">
-                <span></span></label>
-            <label for="active" className="close"></label>
-
-            <Navbar/>
-            <div className="content">
-            <div className="title"></div>
-            </div>
-
-            </div>
-
-    )
-}
-
-
-
-
-function Services(){
-    return (
-        <div>
-            <input type="checkbox" id="active"/>
-            <label for="active" className="menu-btn">
-                <span></span></label>
-            <label for="active" className="close"></label>
-
-            <Navbar/>
-            <div className="content">
-            <div className="title"></div>
-            </div>
-
-            </div>
-    )
-    }
-    
-
-    function Gallery(){
-        return (
-            <div>
-                <input type="checkbox" id="active"/>
-                <label for="active" className="menu-btn">
-                    <span></span></label>
-                    <label for="active" className="close"></label>
-
-                    <Navbar/>
-                    <div className="content">
-                    <div className="title">
-                    </div>
-            </div>
-
-            </div>
-        )
-    }
-    
-
-    function Feedback(){
-        return (
-            <div>
-                <input type="checkbox" id="active"/>
-                <label for="active" className="menu-btn">
-                    <span></span></label>
-                    <label for="active" className="close"></label>
-
-                    <Navbar/>
-                    <div className="content">
-                    <div className="title">
-            </div>
-            </div>
-
-            </div>
-        )
-    }
-export {Home, About, Services, Gallery, Feedback}; */

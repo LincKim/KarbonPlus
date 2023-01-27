@@ -1,24 +1,42 @@
 import React from "react";
-import {GiGooeyMolecule} from 'react-icons/gi';
-import {MdReadMore} from 'react-icons/md'
+import Electricity from "../Estimates/electricity";
+import Flight from "../Estimates/flight";
+import Shipping from "../Estimates/shipping";
+import Vehicle from "../Estimates/vehicle";
+import Fuel from "../Estimates/fuel";
 
-function Display({carbonGrams, carbonKg}){
+function Display(){
 
     return(
-<div className="container">
-  <div className="card">
-    <div className="box">
-      <div className="content">
-        <h2> <GiGooeyMolecule/></h2>
-        <h3>Your Carbon usage is:</h3>
-        <p>{carbonGrams} Gramms</p>
-        <p>{carbonKg} Kgs</p>
-        <a href="#"><MdReadMore/></a>
-        <h2> <GiGooeyMolecule/></h2>
+      <div className="cardsItems">
+        <p id="header-estimate"> Estimates</p>
+        <div class="estimate-cards" id="estimate-containers">
+
+        <div>
+          <Flight />
+        </div>
+
+        <div>
+          <Shipping />
+        </div>
+
+        <div>
+          <Vehicle />
+        </div>
+
+        <div>
+          <Fuel />
+        </div>
+
+        <div>
+          <Electricity />
+        </div>
+
       </div>
-    </div>
-  </div>
-</div>
+
+
+
+      </div>
     )
 
 }

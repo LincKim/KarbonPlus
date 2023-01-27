@@ -1,20 +1,13 @@
 import React from 'react';
 import {GiFootprint} from 'react-icons/gi';
+import {Link} from "react-router-dom";
+// import Display from "./Components/display/Display";
+// import About from "./Components/home/About";
+// import Home from './Components/home/Home';
+
 
 function Navbar(){
 
-    
-    /* let btn1 = document.querySelector('.btn-1');
-    let btn2 = document.querySelector('.btn-1');
-    let btn3 = document.querySelector('.btn-1');
-    
-    let btnsArray = [btn1, btn2, btn3];
-    
-    btnsArray.forEach(btn => {
-    
-       btn.addEventListener('click', (event)=> {
-        event.preventDefault();
-       }); */
     
     
   
@@ -22,12 +15,14 @@ function Navbar(){
         <div className="wrapper">
             <ul id="menuList">
                 
-                <li ><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                 <li><a href="#">Estimates</a></li> 
-
-                
-                
+                <li >
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
+                </li>
+                 <li>
+                    <Link to="/estimates">Estimates</Link></li>   
             </ul>
 
             {/* <div class="wrapp">
@@ -36,6 +31,8 @@ function Navbar(){
       </div>
     </div> */}
 
+
+        
             <h2>
                 
                <p> Count your foot print.</p>
@@ -44,6 +41,13 @@ function Navbar(){
                
 
             </h2>
+
+
+            {/* <Routes>
+                <Route path="/estimates" element={ <Display/>}></Route>
+                <Route path="/about" element={ <About/>}></Route>
+                <Route path="/" element={<Home/>}></Route> 
+            </Routes> */}
 
     
         </div>
