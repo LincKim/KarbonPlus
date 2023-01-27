@@ -8,7 +8,14 @@ In order for you to use the content on this repo ensure you have the following:
 
 A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) nodejs 9.0+
 
-## Installation
+## Technologies Used
+
+* HTML
+* CSS
+* React
+* JavaScript
+
+## Installation Locally
 
 To use this repo on your machine requires some simple steps:
 
@@ -30,8 +37,20 @@ Change directory to the repo folder:
 
  (Alternate Option) Open it in any editor of your choice.
 
-## links
+ ## Requirements to Run App
 
+* Web Browser
+
+
+## Running
+
+* Click the following [link](https://karbonplus.netlify.app/) to run the app:
+
+``` https://karbonplus.netlify.app/ ```
+
+* Click on Estimates in the menu bar to get category you want to check your carbon footprint.
+
+* Enter the required fields and press submit to get your carbon emmision estimate
 
 
 ## Authors
