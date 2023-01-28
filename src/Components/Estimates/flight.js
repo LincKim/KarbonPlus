@@ -69,7 +69,7 @@ const kampala = 'jin'
 
 
     return(
-        <div className="shipping">
+        <div className="shipping col-3">
             <div className="form-box"> 
                 
                     <form>

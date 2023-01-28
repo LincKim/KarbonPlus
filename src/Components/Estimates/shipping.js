@@ -84,7 +84,7 @@ function Shipping(){
 
 
     return(
-        <div className="shipping">
+        <div className="shipping col-3">
             {/* <form>
                 <input type="text" value={weight} placeholder="Weight (Kgs)" onChange={(e)=>setWeight(e.target.value)}/>
                 <input type="text" value={distance} placeholder="Distance (Kms)" onChange={(e)=>setDistance(e.target.value)}/>
@@ -93,7 +93,7 @@ function Shipping(){
                 <button  onClick={handleSubmit}>Submit</button>
             </form> */}
 
-            <div className="form-box">
+            <div className="form-box card">
 	            <form>
 		            <p className="text-center">Shipping Estimate</p>
 	                <div className="input-container">

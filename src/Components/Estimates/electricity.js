@@ -42,8 +42,8 @@ function handleSubmit(e){
 }
 
     return(
-        <div className="shipping" >
-            <div className="form-box "> 
+        <div className="shipping"  >
+            <div className="form-box card"> 
                 <form>
                     <p className="text-center">Electricity C0<sub>2</sub> Estimates</p>
                     <div className="input-container">

@@ -79,7 +79,7 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
 
 
     return(
-        <div className="shipping">
+        <div className="shipping col-3">
             
             {/* <form>
                 <select value={vehicleType} onChange={handleSelectedOption}>
@@ -106,7 +106,7 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
                 {/* </form> */} 
 
 
-                <div className="form-box row">
+                <div className="form-box">
 	                <form>
 		                <span className="text-center">Vehicle Estimate</span>
 	                    <div className="input-container">

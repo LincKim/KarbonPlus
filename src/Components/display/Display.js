@@ -8,9 +8,9 @@ import Fuel from "../Estimates/fuel";
 function Display(){
 
     return(
-      <div className="cardsItems">
-        <p id="header-estimate"> Estimates</p>
-        <div className="estimate-cards  container mt-4" id="estimate-containers">
+      <div className="cardsItems container mt-4">
+        <h2 id="header-estimate"> Estimates</h2>
+        <div className="estimate-cards row" id="estimate-containers">
 
         <div>
           <Flight />

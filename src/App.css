@@ -3,31 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 body {
-  /* justify-content: center; */
-  /* align-items: center;
+  /* justify-content: center;
+  align-items: center;
   flex-direction: row; */
   /* flex-wrap: wrap; */
   min-height: 100vh;
   background: #ffffff;
 }
 
-body .cont {
-  position: absolute;
-  display: inline-block;
-  vertical-align: middle; 
-  /* justify-content: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* margin: 30px 0px; */
-  /* position:absolute; */
-	/* top: 55%; */
-  /* margin-left: 10%; */
-}
+
 
 body  .cont  .car {
   position: relative;
   min-width: 320px;
-  height: 440px;
+  height: 300px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
@@ -133,27 +122,11 @@ body .cont .car .bx .con a:hover {
 	color:#fff;	
 	text-transform:uppercase;
     font-size: 23px;
-    margin: -50px 0 80px 0;
+    margin: -50px 30 0px 0p;
     display: block;
     text-align: center;
 }
-.form-box{
-	position: absolute;
-  display: inline-block;
-  vertical-align: middle;
-	/* left: 50%; 
-	top: 50%; */
-  /* display: inline-block;
-  vertical-align: middle; */
-  /* justify-content: column; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-	transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.89);
-	border-radius:3px;
-	padding:70px 40px;
-  border-radius: 15px;
-}
+
  
 .input-container{
 	position:relative;
@@ -209,26 +182,85 @@ body .cont .car .bx .con a:hover {
   border-bottom:1px solid #e74c3c;	
  }
 
- body .shipping{
+ /* .estimate-cards{
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+ } */
+
+ .shipping{
+
   /* display: inline-block; 
-  flex-direction: column ;  */
+  flex-direction: flex; 
+  vertical-align: middle; */
 
   /* flex-wrap: wrap; */
   /* align-items: center; */
   /* justify-content: space-between; */
-  /* align-items: center;
-  justify-content: center; */
+  /* align-items: center;*/
+  /* justify-content: center; */
  }
+
+ /* CSS for forms */
+
+
+ .form-box{
+	position: absolute;
+  display: inline-block;
+  align-items: flex;
+  top: 45%;
+  left: 50%;
+  vertical-align: middle;
+	/* left: 50%; 
+	top: 50%; */
+  /* display: inline-block;
+  vertical-align: middle; */
+  /* justify-content: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+	transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 40px;
+  border-radius: 15px;
+}
+
+ /* css for result card */
+
+ .cont {
+  position: absolute;
+  display: inline-block;
+  top: 65%;
+  left: 40%;
+  vertical-align: middle;
+
+
+  /* justify-content: flex; */
+  /* align-items: flex; */
+  
+  /* justify-content: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* margin: 30px 0px; */
+  /* position:absolute; */
+	
+  /* margin-left: 10%; */
+}
+
+
+
+
  
 
 
   /* CSS for estimate head */
 
   #header-estimate{
-    margin-bottom: 200px;
+
     text-align: center;
     font-family: 'Cinzel', serif;
     font-size: 3.4em;
+    min-height: 100vh;
 
 
   
@@ -366,6 +398,12 @@ body .cont .car .bx .con a:hover {
 #karbonHomepage {
   font-family: 'Cinzel', serif;
   font-size: 450%;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50% ;
+  right:50%; */
+
+
 }
 
 

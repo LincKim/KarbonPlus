@@ -55,40 +55,40 @@ function Fuel() {
         }
 
     return (
-        <div className="shipping">
+        <div className="shipping ">
           <div className="form-box">
-        <form >
-          <p className="text-center"> Fuel Estimates</p>
-           <div className="input-container">
-            <input type="number" value={responseData} onChange={(e=>setResponseData(e.target.value))}/>
-           </div>
-           <div className="input-container">
-            <select value={fuelType} onChange={handleOptionChange}>
-                <option>fuel type</option>
-                <option value={Bituminous_Coal}>Bituminous_Coal</option>
-                <option value={Diesel_Fuel}>Diesel_Fuel</option>
-                <option value={Jet_Fuel}>Jet Fuel</option>
-                <option value={Kerosene}>Kerosene</option>
-                <option value={Lignite_Coal}>Lignite_Coal</option>
-                <option value={Municipal_Waste}>Municipal_Waste</option>
-                <option value={Natural_Gas }>Natural_Gas</option>
-                <option value={Petroleum_Coke}>Petroleum_Coke</option>
-                <option value={Propane_Gas}>Propane_Gas</option>
-                <option value={Residual_Fuel}>Residual_Fuel</option>
-                <option value={Subbituminous_Coal}>Subbituminous_Coal</option>
-                <option value={Tire_Fuel}>Tire_Fuel</option>
-                <option value={Waste_0il}>Waste_0il</option>
-            </select>
-            </div>
+            <form >
+              <p className="text-center"> Fuel Estimates</p>
+              <div className="input-container">
+                <input type="number" value={responseData} onChange={(e=>setResponseData(e.target.value))}/>
+              </div>
+              <div className="input-container">
+                <select value={fuelType} onChange={handleOptionChange}>
+                  <option>fuel type</option>
+                  <option value={Bituminous_Coal}>Bituminous_Coal</option>
+                  <option value={Diesel_Fuel}>Diesel_Fuel</option>
+                  <option value={Jet_Fuel}>Jet Fuel</option>
+                  <option value={Kerosene}>Kerosene</option>
+                  <option value={Lignite_Coal}>Lignite_Coal</option>
+                  <option value={Municipal_Waste}>Municipal_Waste</option>
+                  <option value={Natural_Gas }>Natural_Gas</option>
+                  <option value={Petroleum_Coke}>Petroleum_Coke</option>
+                  <option value={Propane_Gas}>Propane_Gas</option>
+                  <option value={Residual_Fuel}>Residual_Fuel</option>
+                  <option value={Subbituminous_Coal}>Subbituminous_Coal</option>
+                  <option value={Tire_Fuel}>Tire_Fuel</option>
+                  <option value={Waste_0il}>Waste_0il</option>
+                </select>
+              </div>
 
-            <button className="shipping-btn" onClick={submit}>Submit</button>
+              <button className="shipping-btn" onClick={submit}>Submit</button>
              
-    </form>
-    </div>
+            </form>
+          </div>
    
 
-    <div className="cont">
-                <div className="car">
+                <div className="cont">
+                  <div className="car">
                     <div className="bx">
                         <div className="con">
                             <h2> <GiGooeyMolecule/></h2>
@@ -98,10 +98,9 @@ function Fuel() {
                             <a href="https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions"><MdReadMore/></a>
                             <h2> <GiGooeyMolecule/></h2>
                         </div>
+                      </div>
                     </div>
-                </div>
-                
-            </div>
+                  </div>
 
 
 
