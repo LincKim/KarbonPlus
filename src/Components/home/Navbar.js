@@ -12,8 +12,8 @@ function Navbar(){
     
   
     return(
-        <div className="wrapper">
-            <ul id="menuList">
+        // <div className="wrapper">
+            /* <ul id="menuList">
                 
                 <li >
                     <Link to="/">Home</Link>
@@ -23,34 +23,51 @@ function Navbar(){
                 </li>
                  <li>
                     <Link to="/estimates">Estimates</Link></li>   
-            </ul>
+            </ul> */
 
-            {/* <div class="wrapp">
-      <div class="contain">
-        <h5 id="carbon">count your foot print, carbon ones</h5>
-      </div>
-    </div> */}
+            /* <div class="wrapp">
+                <div class="contain">
+                    <h5 id="carbon">count your foot print, carbon ones</h5>
+                </div>
+            </div> */
 
 
         
-            <h2>
+            /* <h2>
                 
                <p> Count your foot print.</p>
                <p style={{color:"white"}}><GiFootprint/></p>
                <p>Carbon ones!</p>
                
 
-            </h2>
+            </h2> */
 
 
-            {/* <Routes>
+            /* <Routes>
                 <Route path="/estimates" element={ <Display/>}></Route>
                 <Route path="/about" element={ <About/>}></Route>
                 <Route path="/" element={<Home/>}></Route> 
-            </Routes> */}
+            </Routes> */
+
+        /* </div> */
+
+
+
+            /* version 2 jsx */
+
+            <div className="nav">
+                <input type="checkbox"/>
+                <span></span>
+                 <span></span>
+                <div className="navbarList">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">Abouts</a></li>
+                    <li><a href="#">estimates</a></li>
+                </div>
+            </div>
 
     
-        </div>
+       
     )
 };
 
