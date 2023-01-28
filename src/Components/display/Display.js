@@ -10,7 +10,7 @@ function Display(){
     return(
       <div className="cardsItems">
         <p id="header-estimate"> Estimates</p>
-        <div class="estimate-cards" id="estimate-containers">
+        <div className="estimate-cards  container mt-4" id="estimate-containers">
 
         <div>
           <Flight />

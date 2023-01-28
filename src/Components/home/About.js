@@ -4,7 +4,7 @@ import { SiMoleculer } from "react-icons/si";
 function About(){
 
     return(
-        <div>
+        <div id="aboutDiv">
             <h1 id="header-about">About</h1>
 
 
