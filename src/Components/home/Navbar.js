@@ -1,5 +1,5 @@
 import React from 'react';
-import {GiFootprint} from 'react-icons/gi';
+// import {GiFootprint} from 'react-icons/gi';
 import {Link} from "react-router-dom";
 // import Display from "./Components/display/Display";
 // import About from "./Components/home/About";
@@ -60,9 +60,9 @@ function Navbar(){
                 <span></span>
                  <span></span>
                 <div className="navbarList">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">Abouts</a></li>
-                    <li><a href="#">estimates</a></li>
+                    <li><Link to="/">home</Link></li>
+                    <li><Link to="/about">Abouts</Link></li>
+                    <li><Link to="estimates">estimates</Link></li>
                 </div>
             </div>
 

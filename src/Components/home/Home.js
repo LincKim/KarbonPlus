@@ -18,9 +18,9 @@ function Home(){
 
             
 
-            <div>
+            
                     <h1 id="karbonHomepage">Karbon<SiMoleculer/></h1>
-            </div>
+    
 
             {/* <Routes>
                 <Route path="/estimates" element={ <Display/>}></Route>
