@@ -8,31 +8,32 @@ import Fuel from "../Estimates/fuel";
 function Display(){
 
     return(
-      <div className="cardsItems container mt-4">
+      <div className="cardsItems">
         <h2 id="header-estimate"> Estimates</h2>
-        <div className="estimate-cards row" id="estimate-containers">
+        <div  id="estimate-containers">
+        <div className="estimate-cards container ">
+          <div className="estCards" id="flightCard">
+            <Flight />
+          </div>
 
-        <div>
-          <Flight />
-        </div>
+          <div className="estCards" id="shippingCard">
+            <Shipping />
+          </div>
 
-        <div>
-          <Shipping />
-        </div>
+          <div className="estCards" id="vehicleCard">
+            <Vehicle />
+          </div>
 
-        <div>
-          <Vehicle />
-        </div>
+          <div className="estCards" id="fuelCard">
+            <Fuel />
+          </div>
 
-        <div>
-          <Fuel />
-        </div>
+          <div className="estCards" id="electricCard">
+            <Electricity />
+          </div>
+          </div>
 
-        <div>
-          <Electricity />
-        </div>
-
-      </div>
+        </div >
 
 
 

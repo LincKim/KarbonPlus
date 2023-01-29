@@ -79,8 +79,7 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
 
 
     return(
-        <div className="shipping col-3">
-            
+        <div className="shipping ">
             {/* <form>
                 <select value={vehicleType} onChange={handleSelectedOption}>
                     <option value="" disabled selected>Vehicle make</option>
