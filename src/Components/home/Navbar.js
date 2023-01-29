@@ -62,15 +62,24 @@ function Navbar(){
                 <div className="navbarList">
                     <li><Link to="/">home</Link></li>
                     <li><Link to="/about">Abouts</Link></li>
-                    <li><Link to="estimates">estimates</Link>
-                    {/* <select>
-                            <option ><Link>Electricity</Link></option>
-                            <option><Link>Shipping</Link></option>
-                            <option ><Link>Vehicle</Link></option>
-                            <optio ><Link>Fuel</Link></optio>
-                            <option ><Link>Flight</Link></option>
-                    </select> */}
-                    </li>
+                    <li ><Link to="/estimates">Estimates</Link></li> 
+                    {/* <li><div className="dropdownCat"> */}
+                            {/* <li ><Link to="/estimates">Estimates</Link></li> */}
+                            {/* <button><Link to="/estimates">Estimates</Link></button> */}
+                            {/* <div className="dropdownCat-options">
+                                <ul>
+                                <li><Link to="/estimates">Estimates</Link></li>
+                                <li><Link to="/electricity">Electricity</Link></li>
+                                <li><Link to="shipping">Shipping</Link></li>
+                                <li ><Link to="vehicle">Vehicle</Link></li>
+                                <li ><Link to="fuel">Fuel</Link></li>
+                                <li ><Link to="flight">Flight</Link></li>
+                                </ul>
+                            </div> */}
+                        {/* </div> */}
+                        
+
+                    {/* </li> */}
                 </div>
             </div>
 

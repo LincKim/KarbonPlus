@@ -84,7 +84,10 @@ function Shipping(){
 
 
     return(
-        <div className="shipping col-3">
+
+        <div>
+        {/* <h2 id="header-estimate"> Estimates</h2> */}
+        <div className="shipping">
             {/* <form>
                 <input type="text" value={weight} placeholder="Weight (Kgs)" onChange={(e)=>setWeight(e.target.value)}/>
                 <input type="text" value={distance} placeholder="Distance (Kms)" onChange={(e)=>setDistance(e.target.value)}/>
@@ -139,6 +142,7 @@ function Shipping(){
             {/* <TableData carbonGrams={shippingC02g} carbonKg={shippingC02kgs}/> */}
 
 
+        </div>
         </div>
     )
 }

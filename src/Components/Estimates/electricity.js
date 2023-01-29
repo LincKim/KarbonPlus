@@ -42,6 +42,8 @@ function handleSubmit(e){
 }
 
     return(
+        <div>
+        {/* <h2 id="header-estimate"> Estimates</h2> */}
         <div className="shipping"  >
             <div className="form-box card"> 
                 <form>
@@ -72,6 +74,7 @@ function handleSubmit(e){
                         </div>
                     </div>
                 </div>
+        </div>
         </div>
     )
 }

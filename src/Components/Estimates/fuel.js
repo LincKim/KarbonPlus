@@ -55,6 +55,8 @@ function Fuel() {
         }
 
     return (
+      <div>
+        {/* <h2 id="header-estimate"> Estimates</h2> */}
         <div className="shipping ">
           <div className="form-box">
             <form >
@@ -104,6 +106,7 @@ function Fuel() {
 
 
 
+    </div>
     </div>
      
   );
