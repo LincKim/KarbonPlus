@@ -26,11 +26,11 @@ function App() {
             <Route path="/estimates" element={ <Display/>}></Route>
             <Route path="/about" element={ <About/>}></Route>
             <Route path="/" element={<Home/>}></Route>
-            {/* <Route path="/flight" element={<Flight/>}></Route> 
+            <Route path="/flight" element={<Flight/>}></Route> 
             <Route path="/shipping" element={<Shipping/>}></Route> 
             <Route path="/vehicle" element={<Vehicle/>}></Route> 
             <Route path="/fuel" element={<Fuel/>}></Route> 
-            <Route path="/electricity" element={<Electricity/>}></Route>   */}
+            <Route path="/electricity" element={<Electricity/>}></Route>  
       </Routes>
 
 

@@ -1,22 +1,18 @@
 import React from "react";
-import {Link, Routes, Route, BrowserRouter} from "react-router-dom";
-import Electricity from "../Estimates/electricity";
-import Flight from "../Estimates/flight";
-import Shipping from "../Estimates/shipping";
-import Vehicle from "../Estimates/vehicle";
-import Fuel from "../Estimates/fuel";
-import Category from "../Estimates/category";
+import { GiFootsteps } from "react-icons/gi";
 
 function Display(){
 
     return(
      
       <div className="cardsItems">
-        <h2 id="header-estimate"> Estimates</h2>
+        <h2 id="header-est"> Estimates</h2>
+
+        <p id="estimateParagraph"><hr/>Select Your Estimate Category For Carbon Footprints<hr/><GiFootsteps/></p>
         <div className="containerers"  id="estimate-containers">
 
 
-        <div className="estimate-cards">
+        {/* <div className="estimate-cards">
           <div className="estCards" id="flightCard">
             <Flight />
           </div>
@@ -36,7 +32,7 @@ function Display(){
           <div className="estCards" id="electricCard">
             <Electricity />
           </div>
-          </div>
+          </div> */}
 
 
 

@@ -43,7 +43,10 @@ function handleSubmit(e){
 
     return(
         <div>
-        {/* <h2 id="header-estimate"> Estimates</h2> */}
+            <div >
+            <h2 id="header-estimate"> Electric CO<sub>2</sub> Estimate</h2>
+            </div>
+        
         <div className="shipping"  >
             <div className="form-box card"> 
                 <form>

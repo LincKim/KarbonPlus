@@ -86,7 +86,7 @@ function Shipping(){
     return(
 
         <div>
-        {/* <h2 id="header-estimate"> Estimates</h2> */}
+        <h2 id="header-estimate">Shipping  CO<sub>2</sub> Estimates</h2>
         <div className="shipping">
             {/* <form>
                 <input type="text" value={weight} placeholder="Weight (Kgs)" onChange={(e)=>setWeight(e.target.value)}/>

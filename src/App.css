@@ -2,14 +2,146 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
+
 body {
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: row; */
+  justify-content: center;
+  align-items: center; 
+  /* flex-direction: row;  */
   /* flex-wrap: wrap; */
   min-height: 100vh;
   background: #ffffff;
 }
+
+
+/* CSS for thr karbon wording */
+
+#karbonHomepage {
+  font-family: 'Cinzel', serif;
+  font-size: 450%;
+ 
+}
+
+
+#karbonHomepage{
+  font-size: 120px; 
+  /* text-transform: uppercase;
+  font-family: 'Gambetta', serif; */
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(0, 0, 0);
+  outline: none;
+  text-align: center;
+}
+
+#karbonHomepage:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+
+  /* Navbar CSS */
+
+body, .nav, .navbarList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    top: 20px;
+    left: 20px;
+}
+
+.navbarList {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ .navbarList {
+    width: 450px;
+}
+
+.navbarList li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbarList select {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0px;
+}
+
+.navbarList li a {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbarList select  {
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+  border-color: transparent;
+}
+
+.navbarList li a:hover {
+    color: #161919;
+}
+
+.nav input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.nav span {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: red;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
 
 
 
@@ -213,8 +345,8 @@ body .cont .car .bx .con a:hover {
   /* position:absolute; */
   /* display: block; */
   /* flex-direction: column; */
-  float: left;
-  width: 20%;
+  /* float: left; */
+  /* width: 20%; */
   padding: 0 10px;
   top: 50%;
 
@@ -250,8 +382,8 @@ body .cont .car .bx .con a:hover {
 	position: absolute; 
   /* display: inline-block; */
   /* align-items: flex; */
-  /* top: 40%;
-  left: 50%;  */
+  top: 55%;
+  left: 50%; 
   /* vertical-align: middle; */
 
 	transform: translate(-50%,-50%);
@@ -266,8 +398,8 @@ body .cont .car .bx .con a:hover {
  .cont {
   position: absolute;
   /* display: inline-block; */
-  /* top: 60%;
-  left: 40%; */
+  top: 33%;
+  left: 67%;
   vertical-align: middle;
   margin: 30px 0px; 
 
@@ -281,11 +413,20 @@ body .cont .car .bx .con a:hover {
     text-align: center;
     font-family: 'Cinzel', serif;
     font-size: 3.4em;
-    min-height: 100vh;
-
-
-  
+    /* min-height: 100vh; */
+    position: absolute;
+    /* justify-content: center;
+    align-items: center; */
+    top: 10.5%;
+    /* left: 50px; */
   }
+
+  #header-est{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+  }
+  
 
 
 /* CSS for about About page */
@@ -408,134 +549,6 @@ body .cont .car .bx .con a:hover {
 /* Version 2 css */
 
 
-/* CSS for thr karbon wording */
-
-#karbonHomepage {
-  font-family: 'Cinzel', serif;
-  font-size: 450%;
- 
-}
-
-
-#karbonHomepage{
-  font-size: 120px; 
-  /* text-transform: uppercase;
-  font-family: 'Gambetta', serif; */
-  letter-spacing: -3px;
-  transition: 700ms ease;
-  font-variation-settings: "wght" 311;
-  margin-bottom: 0.8rem;
-  color: rgb(0, 0, 0);
-  outline: none;
-  text-align: center;
-}
-
-#karbonHomepage:hover {
-  font-variation-settings: "wght" 582; 
-  letter-spacing: 1px;
-}
-
-
-  /* Navbar CSS */
-
-body, .nav, .navbarList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav {
-    position: absolute;
-    background-color: #fff;
-    padding: 20px;
-    transition: 0.5s;
-    border-radius: 50px;
-    overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0,0,0,.2);
-    top: 20px;
-    left: 20px;
-}
-
-.navbarList {
-    margin: 0;
-    padding: 0;
-    width: 0;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.nav input:checked ~ .navbarList {
-    width: 450px;
-}
-
-.navbarList li {
-    list-style: none;
-    margin: 0 10px;
-}
-
-.navbarList select {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0px;
-}
-
-.navbarList li a {
-    text-decoration: none;
-    color: #666;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: 0.5s;
-}
-
-.navbarList select  {
-  text-decoration: none;
-  color: #666;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: 0.5s;
-  border-color: transparent;
-}
-
-.navbarList li a:hover {
-    color: #161919;
-}
-
-.nav input {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.nav span {
-    position: absolute;
-    left: 30px;
-    width: 30px;
-    height: 4px;
-    border-radius: 50px;
-    background-color: #666;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-.nav input:checked ~ span {
-    background-color: red;
-}
-
-.nav span:nth-child(2) {
-    transform: translateY(-8px);
-}
-
-.nav input:checked ~ span:nth-child(2) {
-    transform: translateY(0) rotate(-45deg);
-}
-.nav span:nth-child(3) {
-    transform: translateY(8px);
-}
-
-.nav input:checked ~ span:nth-child(3) {
-    transform: translateY(0) rotate(45deg);
-}
 
 
  /* CSS for categories */
@@ -674,27 +687,65 @@ a.button:active {
 
 /* CSS for the dropdown */
 
-.dropdownCat{
-  display: inline-block;
+
+#overflow{
+  overflow: hidden;
+  transition: 0.5s;
   position: relative;
+  display: inline-block
 }
 
-.dropdownCat-options  {
-  display: none;
+.dropdownCat{
+  display:none;
   position: absolute;
   overflow: auto;
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
-  padding:20px 40px;
 }
 
-.dropdownCat-options :hover {
-  color: #0a0a23;
-  background-color: #ddd;
-  border-radius:5px;
-}
-
-.dropdownCat:hover .dropdownCat-options {
+#overflow:hover .dropdownCat{
+  position: relative;
   display: block;
+  overflow: hidden;
+  transition: all 0.3s ease
+
 }
+
+.dropdownCat{
+  /* display:block; */
+  clear: both;
+    width: 100%;
+    text-align: left;
+    /* margin-bottom: 20px; */
+    border-style: none;
+    padding-left: 10px;
+    transition: all 0.3s ease
+}
+
+.dropdownCat a:hover {
+  padding-left: 10px;
+  border-left: 2px solid  #f42c2c;
+  transition: all 0.5s ease;
+}
+
+
+#estimateParagraph{
+  position: relative;
+  text-align: center;
+  font-size: 3em ;
+  font-family: 'Prata', serif;
+  /* font-family: 'Playfair Display SC', serif; */
+
+}
+
+
+.cardItems{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+
+
+
+
+
