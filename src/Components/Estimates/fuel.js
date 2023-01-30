@@ -4,7 +4,7 @@ import {GiGooeyMolecule} from 'react-icons/gi';
 import {MdReadMore} from 'react-icons/md'
 
 function Fuel() {
-  const [responseData, setResponseData] = useState(0);
+  const [responseData, setResponseData] = useState([]);
   const [fuelType, setFuelType]= useState("")
  const [carbon_g, setCarbon_g] = useState(0)
  const [carbon_kg, setCarbon_kg] = useState(0)
@@ -32,6 +32,8 @@ function Fuel() {
             setCarbon_kg(responseData.data.attributes.carbon_kg)
       })
       .catch(error => console.error("Error:", error));
+      setResponseData([])
+      setFuelType('')
   } 
 
             const  Bituminous_Coal = "bit"
@@ -51,7 +53,7 @@ function Fuel() {
         function handleOptionChange(e){
         e.preventDefault()
             setFuelType(e.target.value)
-
+            
         }
 
     return (
@@ -62,7 +64,7 @@ function Fuel() {
             <form >
               <p className="text-center"> Fuel Estimates</p>
               <div className="input-container">
-                <input type="number" value={responseData} onChange={(e=>setResponseData(e.target.value))}/>
+                <input type="number" value={responseData} placeholder='Amount(fuel_source)'onChange={(e=>setResponseData(e.target.value))}/>
               </div>
               <div className="input-container">
                 <select value={fuelType} onChange={handleOptionChange}>

@@ -61,7 +61,7 @@ function Navbar(){
                  <span></span>
                 <div className="navbarList">
                     <li><Link to="/">home</Link></li>
-                    <li><Link to="/about">Abouts</Link></li> 
+                    <li><Link to="/about">About</Link></li> 
                     <li id="overflow"><li><Link to="/estimates">Estimates</Link></li>
                                 <ul className="dropdownCat">
                                 <li><Link to="/electricity">Electricity</Link></li>
