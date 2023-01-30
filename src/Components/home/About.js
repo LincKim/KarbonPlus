@@ -53,7 +53,7 @@ function About(){
                     <hr/>
 
                     <div className="aboutDet">
-                        <p>Feedback and suggestions on how we can improve our estimatesare welcome.</p>
+                        <p>Feedback and suggestions on how we can improve our estimates are welcome.</p>
                     </div>
                     
                     <hr/>
