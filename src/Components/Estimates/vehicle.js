@@ -79,8 +79,9 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
 
 
     return(
-        <div className="shipping">
-            
+        <div>
+        <h2 id="header-estimate">Vehicle CO<sub>2</sub> Estimate</h2>
+        <div className="shipping ">
             {/* <form>
                 <select value={vehicleType} onChange={handleSelectedOption}>
                     <option value="" disabled selected>Vehicle make</option>
@@ -145,7 +146,7 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
                     <div className="bx">
                         <div className="con">
                             <h2> <GiGooeyMolecule/></h2>
-                            <h3>Your Vehicle CO<sub>2</sub> usage is:</h3>
+                            <h3>Your Vehicle CO<sub>2</sub> footprint:</h3>
                             <p>{carbonGrams} Gramms</p>
                             <p>{carbonKg} Kgs</p>
                             <a href="https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions"><MdReadMore/></a>
@@ -156,6 +157,7 @@ const mazda = "e92e03fb-dcaf-4d37-956b-d56571bc5440"
             </div>
 
 
+        </div>
         </div>
     )
 }

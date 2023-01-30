@@ -42,11 +42,15 @@ function handleSubmit(e){
 }
 
     return(
-        <div className="shipping">
-            <div className="form-box">
-                
+        <div>
+            <div >
+            <h2 id="header-estimate"> Electric CO<sub>2</sub> Estimate</h2>
+            </div>
+        
+        <div className="shipping"  >
+            <div className="form-box card"> 
                 <form>
-                    <p className="text-center">Electricity Carbon Estimates</p>
+                    <p className="text-center">Electricity C0<sub>2</sub> Estimates</p>
                     <div className="input-container">
                         <input type="number" value={elec_Value} placeholder="Unit(mwh)" onChange={(e)=>{
                             e.preventDefault()
@@ -54,7 +58,6 @@ function handleSubmit(e){
                     </div>
                         
                     <button className='shipping-btn' onClick={handleSubmit}>Submit</button>
-
                 </form>
             
                 
@@ -74,6 +77,7 @@ function handleSubmit(e){
                         </div>
                     </div>
                 </div>
+        </div>
         </div>
     )
 }

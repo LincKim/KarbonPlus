@@ -69,6 +69,8 @@ const kampala = 'jin'
 
 
     return(
+        <div>
+            <h2 id="header-estimate">Flight Estimates</h2>
         <div className="shipping">
             <div className="form-box"> 
                 
@@ -155,6 +157,7 @@ const kampala = 'jin'
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
         

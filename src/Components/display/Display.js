@@ -1,42 +1,65 @@
 import React from "react";
-import Electricity from "../Estimates/electricity";
-import Flight from "../Estimates/flight";
-import Shipping from "../Estimates/shipping";
-import Vehicle from "../Estimates/vehicle";
-import Fuel from "../Estimates/fuel";
+import { GiFootsteps } from "react-icons/gi";
 
 function Display(){
 
     return(
+     
       <div className="cardsItems">
-        <p id="header-estimate"> Estimates</p>
-        <div class="estimate-cards" id="estimate-containers">
+        <h2 id="header-est"> Estimates</h2>
 
-        <div>
-          <Flight />
-        </div>
+        <p id="estimateParagraph"><hr/>Select Your Estimate Category For Carbon Footprints<hr/><GiFootsteps/></p>
+        <div className="containerers"  id="estimate-containers">
 
-        <div>
-          <Shipping />
-        </div>
 
-        <div>
-          <Vehicle />
-        </div>
+        {/* <div className="estimate-cards">
+          <div className="estCards" id="flightCard">
+            <Flight />
+          </div>
 
-        <div>
-          <Fuel />
-        </div>
+          <div className="estCards" id="shippingCard">
+            <Shipping />
+          </div>
 
-        <div>
-          <Electricity />
-        </div>
+          <div className="estCards" id="vehicleCard">
+             <Vehicle />
+          </div>
+
+          <div className="estCards" id="fuelCard">
+            <Fuel />
+          </div>
+
+          <div className="estCards" id="electricCard">
+            <Electricity />
+          </div>
+          </div> */}
+
+
+
+          {/* <Category/> */}
+
+
+
+
+
+
+
+
+
+          
+        
+
+
+
+
+
+        </div >
+
+
 
       </div>
 
-
-
-      </div>
+     
     )
 
 }

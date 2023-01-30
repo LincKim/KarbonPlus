@@ -1,32 +1,32 @@
 import React from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import { SiMoleculer } from "react-icons/si";
 import { useNavigate } from 'react-router-dom';
-import About from "./About";
-import Display from "../display/Display";
-import {Routes, Route} from "react-router-dom";
+// import About from "./About";
+// import Display from "../display/Display";
+// import {Routes, Route} from "react-router-dom";
 
 
 function Home(){
     return (
         <div>
             
-            <input type="checkbox" id="active"/>
+            {/* <input type="checkbox" id="active"/>
             <label for="active" className="menu-btn">
                 </label>
-            <label for="active" className="close"></label>
+            <label for="active" className="close"></label> */}
 
-            <Navbar/>
+            
 
-            <div>
-                    <h1 id="content">Karbon<SiMoleculer/></h1>
-            </div>
+            
+                    <h1 id="karbonHomepage">Karbon<SiMoleculer/></h1>
+    
 
-            <Routes>
+            {/* <Routes>
                 <Route path="/estimates" element={ <Display/>}></Route>
                 <Route path="/about" element={ <About/>}></Route>
-                {/* <Route path="/" element={<Home/>}></Route> */}
-            </Routes> 
+                <Route path="/" element={<Home/>}></Route>
+            </Routes>  */}
 
 
         </div>
