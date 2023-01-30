@@ -20,6 +20,146 @@ function Home(){
 
             
                     <h1 id="karbonHomepage">Karbon<SiMoleculer/></h1>
+
+
+                    <div class="container">
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div classNAme="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div className="rain">
+		<div className="drop"></div>
+		<div className="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div className="splash"></div>
+		<div className="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+</div>
     
 
             {/* <Routes>
