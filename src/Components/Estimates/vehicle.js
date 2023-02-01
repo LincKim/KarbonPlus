@@ -15,8 +15,6 @@ function Vehicle(){
     const [ carbonGrams, setCarbonGrams] = useState(0)
 
 
-
-
     let dataUrl = "https://www.carboninterface.com/api/v1/estimates"
 
     let  contentType = {
@@ -33,12 +31,6 @@ function Vehicle(){
         })
 
     }
-
-
- 
-
-
-    
 
 function handleSubmit(e){
     e.preventDefault()
@@ -57,8 +49,6 @@ function handleSubmit(e){
 function handleSelectedOption(e){
     e.preventDefault()
     setVehicleType(e.target.value)
-
-
 
 }
 

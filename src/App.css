@@ -143,8 +143,6 @@ body, .nav, .navbarList {
 }
 
 
-
-
 body  .cont  .car {
   position: relative;
   min-width: 320px;
@@ -314,32 +312,9 @@ body .cont .car .bx .con a:hover {
   border-bottom:1px solid #e74c3c;	
  }
 
- .estimate-cards{
-  /* flex-direction:row; */
-  /* display: inline-flex;
-  flex-direction: right;
-  grid-template-columns: repeat(5, 1fr); */
-/* 
-  margin: 0 -5px; */
-
-
- }
-
- /* Clear floats after the columns */
- /* .estimate-cards:after{
-  content: "";
-  display: table;
-  clear: both;
- } */
 
  /* Responsive columns */
-/* @media screen and (max-width: 600px) {
-  .shipping {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-} */
+
 
  .estCards{
   /* position:absolute; */
@@ -349,29 +324,6 @@ body .cont .car .bx .con a:hover {
   /* width: 20%; */
   padding: 0 10px;
   top: 50%;
-
-
-
- }
-
- /* * {
-  box-sizing: border-box;
-} */
-
- .shipping{
-
-  /* display: inline-block; 
-  flex-direction: flex; 
-  vertical-align: middle; */
-
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* align-items: center;*/
-  /* justify-content: center; */
-
-  /* padding: 16x;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2) ; */
  }
 
 
@@ -428,7 +380,6 @@ body .cont .car .bx .con a:hover {
   }
   
 
-
 /* CSS for about About page */
 
 #aboutDiv{
@@ -446,8 +397,6 @@ body .cont .car .bx .con a:hover {
   font-family: 'Cinzel', serif;
   text-align: center;
   font-size: 3.3em;
-  
-
 }
 
 #header-about {
@@ -471,7 +420,6 @@ body .cont .car .bx .con a:hover {
   transform: scale(1.4);
   cursor: pointer;
 }
-
 
 .linkName {
   color: rgb(255, 255, 255);
@@ -538,11 +486,7 @@ body .cont .car .bx .con a:hover {
   transform: rotate(0deg);
 }
 
-
-
 /* CSS for displaying the card items */
-
-
 
 
 
@@ -589,7 +533,6 @@ body .cont .car .bx .con a:hover {
   transition: all 0.5s ease;
 }
 
-
 #estimateParagraph{
   position: relative;
   text-align: center;
@@ -599,16 +542,12 @@ body .cont .car .bx .con a:hover {
 
 }
 
-
 .cardItems{
   justify-content: center;
   align-items: center;
   position: relative;
   
 }
-
-
-
 
 .container{
 	width: 100%;
@@ -754,7 +693,6 @@ body .cont .car .bx .con a:hover {
 		opacity: 0;
 	}
 }
-
 
 .splash{
 	position: absolute;
